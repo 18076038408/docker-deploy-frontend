@@ -35,7 +35,7 @@ jobs:
         with:
           host: ${{ secrets.HOST_SERVER }}
           username: ${{ secrets.HOST_USER_NAME }}
-          key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}# 服务器 SSH 私钥（在 GitHub Secrets 中配置）
+          key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
           port: 22
           source: "docker-compose.yml"
           target: "/home/ubuntu/frontend"
