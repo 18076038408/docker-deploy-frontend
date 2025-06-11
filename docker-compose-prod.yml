@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  frontend:
+    image: 20232076/234-deploylab-frontend:latest
+    pull_policy: always
+    ports:
+      - "9999:80"
