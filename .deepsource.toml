@@ -1,7 +1,9 @@
-version = 1
-
-[[
-analyzers
-]]
+[[analyzers]]
 name = "javascript"
 enabled = true
+
+[analyzers.meta]
+# 匹配 JavaScript 测试文件路径，若没有特殊测试路径，可简单写
+test_file_patterns = ["test/**/*Test.js", "test/**/*Tests.js"]
+# 排除前端构建产物、第三方库等，按需调整
+excluded_file_patterns = ["dist/**", "node_modules/**"]
